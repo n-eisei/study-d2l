@@ -41,11 +41,16 @@
 
 - dockerコンテナを起動する
   `pwd`はカレントフォルダのパスを表す。下記の例では、カレントフォルダはd2l-pytorch-colab-classicである。
-
+  
+   (linux /mac )
    ```
    docker run --rm -ti --name d2l -p 8188:8188 -v `pwd`:/root/study sunylab/d2l:1.0
    ```
-
+   (power-shell)
+   ```
+   docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.0
+   ```
+   
    - ”--rm”オプションはコンテナ終了後に自動削除する。毎回クリーンな環境で実行したいならおすすめ。
    - ”-ti”オプションは、実行中のコンテナをcontrol-Cで終了できるようにする。これをつけなければ、コンテナの実行を終了するには[docker stop]コマンドが必要。
    - "--name d2l"は、起動したコンテナを識別するため。
