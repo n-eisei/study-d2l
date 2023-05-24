@@ -82,8 +82,10 @@
 
 ## 終了時、docker退出
 -　ctr-cで退出、dockerを閉じる
+-　”Shutdown this Jupyter server (y/[n])?”が出た場合は、yを入れる。
 
 ## 毎回の再開
+
 - dockerコンテナを起動する
   
   ※　カレントフォルダはd2l-pytorch-colab-classic-masterである。
@@ -96,4 +98,3 @@
    ```
    docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.0
    ```
-
