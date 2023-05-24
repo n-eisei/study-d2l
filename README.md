@@ -14,12 +14,10 @@
   [D2L Colab Classic](https://github.com/d2l-ai/d2l-pytorch-colab-classic.git)を例として、
 
 - コードをダウンロード
-
    ```
-   git clone https://github.com/d2l-ai/d2l-pytorch-colab-classic.git
+   wget https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
    ```
-   windowsでgitできなければ（googleなどで調べて、windowsにgitをインストールすれば、上記でできる）、下記実施によるダウンロード
-   
+   windowsで,下記実施によるダウンロード
     ```
    １．https://github.com/d2l-ai/d2l-pytorch-colab-classic ページの右上「code」→download zip
    ２．自分のPCに解凍
