@@ -22,10 +22,10 @@
      wget https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
     ```
    　
-    解凍：
-    ```
+     解凍：
+     ```
      unzip master.zip
-    ```
+     ```
      
   - windows
     
