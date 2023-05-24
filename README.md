@@ -61,11 +61,10 @@
    ```
 
 - dockerコンテナを起動する
-  `pwd`はカレントフォルダのパスを表す。下記の例では、カレントフォルダはd2l-pytorch-colab-classic-masterである。
   
    (linux /mac )
    ```
-   docker run --rm -ti --name d2l -p 8188:8188 -v `pwd`:/root/study sunylab/d2l:1.0
+   docker run --rm -ti --name d2l -p 8188:8188 -v $(pwd):/root/study sunylab/d2l:1.0
    ```
    (power-shell)
    ```
@@ -76,7 +75,7 @@
    - ”-ti”オプションは、実行中のコンテナをcontrol-Cで終了できるようにする。これをつけなければ、コンテナの実行を終了するには[docker stop]コマンドが必要。
    - "--name d2l"は、起動したコンテナを識別するため。
    - "-p 8188:8188"はホストの8188ポートとコンテナの8188ポートにマッピングする。
-   - “-v `pwd`:/root/study”はカレントフォルダをコンテナの中の[/root/study]フォルダにマッピングする。
+   - “-v $(pwd):/root/study” また、“-v ${PWD}:/root/study”　はカレントフォルダをコンテナの中の[/root/study]フォルダにマッピングする。上記の例では、カレントフォルダはd2l-pytorch-colab-classic-masterである。
 
 - ブラウザを開いて http://localhost:8188 ページを開く
   jupyterの画面に【/root/study】フォルダにあるjupyterファイルを開いて実行を試してください。
