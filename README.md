@@ -16,34 +16,30 @@
 
 - コードをダウンロードして解凍
   - linux/mac
-   
-    ダウンロード：
-    ```
+    - ダウンロード：
+     ```
      wget https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
-    ```
-   　
-     解凍：
+     ```
+     - 解凍：
      ```
      unzip master.zip
      ```
      
   - windows
-    
-    ダウンロード(cmd)：
+    - ダウンロード(cmd)：
     ```
     curl -OL https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
     ```
-    
-    解凍：
+    - 解凍：
     ```
     tar -xf master.zip
     ```
     
-    或いは：
+    或いは 
     ```
-   １．https://github.com/d2l-ai/d2l-pytorch-colab-classic ページの右上「code」→download zip
-   ２．自分のPCに解凍
-   ```
+    １．https://github.com/d2l-ai/d2l-pytorch-colab-classic ページの右上「code」→download zip
+    ２．自分のPCに解凍
+    ```
    
 - 生成されたd2l-pytorch-colab-classicmasterフォルダに入る。
 
