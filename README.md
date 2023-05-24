@@ -18,12 +18,18 @@
    ```
    git clone https://github.com/d2l-ai/d2l-pytorch-colab-classic.git
    ```
-
+   windowsでgitできなければ（googleなどで調べて、windowsにgitをインストールすれば、上記でできる）、下記実施によるダウンロード
+   
+    ```
+   １．https://github.com/d2l-ai/d2l-pytorch-colab-classic ページの右上「code」→download zip
+   ２．自分のPCに解凍
+   例：C:\Users\syq\d2l-pytorch-colab-classic-master
+   ```
+   
 - 生成されたd2l-pytorch-colab-classicフォルダに入る。
 
    ```
    cd d2l-pytorch-colab-classic
-
 
 - カレントフォルダの中身をリストアップすると、下記のようになる。
 
@@ -60,6 +66,19 @@
 - ブラウザを開いて http://localhost:8188 ページを開く
   jupyterの画面に【/root/study】フォルダにあるjupyterファイルを開いて実行を試してください。
 
+## 終了時、docker退出
+-　ctr-cで退出、dockerを閉じる
 
-
+## 毎回の再開
+- dockerコンテナを起動する
+  `pwd`はカレントフォルダのパスを表す。下記の例では、カレントフォルダはd2l-pytorch-colab-classicである。
+  
+   (linux /mac )
+   ```
+   docker run --rm -ti --name d2l -p 8188:8188 -v `pwd`:/root/study sunylab/d2l:1.0
+   ```
+   (power-shell)
+   ```
+   docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.0
+   ```
 
