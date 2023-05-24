@@ -17,15 +17,15 @@
 - コードをダウンロードして解凍
   - linux/mac
    
-     ダウンロード：
-     ```
+    ダウンロード：
+    ```
      wget https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
-     ```
+    ```
    　
     解凍：
-     ```
+    ```
      unzip master.zip
-     ```
+    ```
      
   - windows
     
@@ -90,13 +90,14 @@
 
 ## 毎回の再開
 - dockerコンテナを起動する
-  `pwd`はカレントフォルダのパスを表す。下記の例では、カレントフォルダはd2l-pytorch-colab-classic-masterである。
   
-   (linux /mac )
+  ※　カレントフォルダはd2l-pytorch-colab-classic-masterである。
+  
+  - linux /mac
    ```
    docker run --rm -ti --name d2l -p 8188:8188 -v `pwd`:/root/study sunylab/d2l:1.0
    ```
-   (power-shell)
+   - power-shell
    ```
    docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.0
    ```
