@@ -21,16 +21,19 @@
      ```
      wget https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
      ```
-   　解凍：
+   　
+    解凍：
      ```
      unzip master.zip
      ```
      
   - windows
+    
     ダウンロード(cmd)：
     ```
     curl -OL https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
     ```
+    
     解凍：
     ```
     tar -xf master.zip
@@ -42,15 +45,15 @@
    ２．自分のPCに解凍
    ```
    
-- 生成されたd2l-pytorch-colab-classicフォルダに入る。
+- 生成されたd2l-pytorch-colab-classicmasterフォルダに入る。
 
    ```
-   cd d2l-pytorch-colab-classic
+   cd d2l-pytorch-colab-classic-master
 
 - カレントフォルダの中身をリストアップすると、下記のようになる。
 
    ```
-   d2l-pytorch-colab-classic > ls
+   d2l-pytorch-colab-classic-master > ls
    README.md                                        chapter_deep-learning-computation                chapter_notation                                 d2l
    chapter_appendix-mathematics-for-deep-learning   chapter_generative-adversarial-networks          chapter_optimization                             d2l.bib
    chapter_appendix-tools-for-deep-learning         chapter_installation                             chapter_preface                                  img
@@ -62,7 +65,7 @@
    ```
 
 - dockerコンテナを起動する
-  `pwd`はカレントフォルダのパスを表す。下記の例では、カレントフォルダはd2l-pytorch-colab-classicである。
+  `pwd`はカレントフォルダのパスを表す。下記の例では、カレントフォルダはd2l-pytorch-colab-classic-masterである。
   
    (linux /mac )
    ```
@@ -87,7 +90,7 @@
 
 ## 毎回の再開
 - dockerコンテナを起動する
-  `pwd`はカレントフォルダのパスを表す。下記の例では、カレントフォルダはd2l-pytorch-colab-classicである。
+  `pwd`はカレントフォルダのパスを表す。下記の例では、カレントフォルダはd2l-pytorch-colab-classic-masterである。
   
    (linux /mac )
    ```
