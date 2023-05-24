@@ -99,7 +99,7 @@
    docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.0
    ```
    
- ## d2l dockerコンテナ既に起動中
+ ## d2l dockerコンテナ既に起動中の場合
    - 下記のエラーが出た場合、コンテナがすでに起動中
    ```
    docker: Error response from daemon: Conflict. The container name "/d2l" is already in use by container "7bb7ab7745185c454955f5f73a327804fda3b07d7f79f1581d2fc5a2ca4b385e". You have to remove (or rename) that container to be able to reuse that name.
