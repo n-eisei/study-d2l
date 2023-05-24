@@ -86,7 +86,7 @@
 
 ## 毎回の再開
 
-- dockerコンテナを起動する
+- d2l dockerコンテナを起動する
   
   ※　カレントフォルダはd2l-pytorch-colab-classic-masterである。
   
@@ -98,3 +98,19 @@
    ```
    docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.0
    ```
+   
+ ## d2l dockerコンテナ既に起動中
+   - 下記のエラーが出た場合、コンテナがすでに起動中
+   ```
+   docker: Error response from daemon: Conflict. The container name "/d2l" is already in use by container "7bb7ab7745185c454955f5f73a327804fda3b07d7f79f1581d2fc5a2ca4b385e". You have to remove (or rename) that container to be able to reuse that name.
+   ```
+   - この場合の対策
+  
+   　- コンテナが正常に起動中でしたら、ブラウザを開いて http://localhost:8188 ページを開く、
+
+   　- 起動しているコンテナを下記のコマンドで終了して、「毎回の再開」の手順でコンテナを再起動する
+      
+       ```
+       docker stop d2l
+       ```
+ 
