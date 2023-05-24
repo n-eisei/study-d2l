@@ -10,18 +10,36 @@
    ```
     docker pull sunylab/d2l:1.0
    ```
+   
 ## D2Lソースコードをjupyterで実行する
   [D2L Colab Classic](https://github.com/d2l-ai/d2l-pytorch-colab-classic.git)を例として、
 
-- コードをダウンロード
-   ```
-   wget https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
-   ```
-   windowsで,下記実施によるダウンロード
+- コードをダウンロードして解凍
+  - linux/mac
+   
+     ダウンロード：
+     ```
+     wget https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
+     ```
+   　解凍：
+     ```
+     unzip master.zip
+     ```
+     
+  - windows
+    ダウンロード(cmd)：
+    ```
+    curl -OL https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
+    ```
+    解凍：
+    ```
+    tar -xf master.zip
+    ```
+    
+    或いは：
     ```
    １．https://github.com/d2l-ai/d2l-pytorch-colab-classic ページの右上「code」→download zip
    ２．自分のPCに解凍
-   例：C:\Users\syq\d2l-pytorch-colab-classic-master
    ```
    
 - 生成されたd2l-pytorch-colab-classicフォルダに入る。
