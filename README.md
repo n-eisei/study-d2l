@@ -20,24 +20,28 @@
      ```
      unzip master.zip -d d2l-pytorch-colab
      ```
-     
+
+      或いはgitコマンドでソースコードを取得する
+      ```
+      git clone https://github.com/d2l-ai/d2l-pytorch-colab.git
+      ```
   - windows
     - ダウンロード(cmd)：
-    ```
-    curl -OL https://github.com/d2l-ai/d2l-pytorch-colab/archive/refs/heads/master.zip
-    ```
+      ```
+      curl -OL https://github.com/d2l-ai/d2l-pytorch-colab/archive/refs/heads/master.zip
       master.zipファイルを自分のPCの適当な場所に解凍（ソースコードフォルダd2l-pytorch-colabが生成される）
-    
-    或いは 
-    ```
-    https://github.com/d2l-ai/d2l-pytorch-colab ページの右上「code」→download zip
-    ```
-    　master.zipファイルを自分のPCの適当な場所に解凍（ソースコードフォルダd2l-pytorch-colabが生成される）
+      ```
 
-    或いは
-    ```
-    git clone https://github.com/d2l-ai/d2l-pytorch-colab.git
-    ```
+      或いは 
+      ```
+      https://github.com/d2l-ai/d2l-pytorch-colab ページの右上「code」→download zip
+      master.zipファイルを自分のPCの適当な場所に解凍（ソースコードフォルダd2l-pytorch-colabが生成される）
+      ```
+
+      或いはgitコマンドでソースコードを取得する
+      ```
+      git clone https://github.com/d2l-ai/d2l-pytorch-colab.git
+      ```
     
 - 生成されたd2l-pytorch-colabフォルダに入る（d2l-pytorch-colab-masterなど生成されたフォルダ名が違うならそのフォルダに合わせて使ってもよい）。
 
