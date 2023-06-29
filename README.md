@@ -18,7 +18,7 @@
      ```
      - 解凍：
      ```
-     unzip master.zip
+     unzip master.zip -d d2l-pytorch-colab
      ```
      
   - windows
@@ -26,18 +26,20 @@
     ```
     curl -OL https://github.com/d2l-ai/d2l-pytorch-colab/archive/refs/heads/master.zip
     ```
-    - 解凍：
-    ```
-    tar -xf master.zip
-    ```
+    自分で適当な場所のd2l-pytorch-colabに解凍
     
     或いは 
     ```
-    １．https://github.com/d2l-ai/d2l-pytorch-colab ページの右上「code」→download zip
-    ２．自分のPCに解凍
+    https://github.com/d2l-ai/d2l-pytorch-colab ページの右上「code」→download zip
     ```
-   
-- 生成されたd2l-pytorch-colabフォルダに入る。
+    自分で適当な場所のd2l-pytorch-colabに解凍
+
+    或いは
+    ```
+    git clone https://github.com/d2l-ai/d2l-pytorch-colab.git
+    ```
+    
+- 生成されたd2l-pytorch-colabフォルダに入る（d2l-pytorch-colab-masterなど違うフォルダ名なら、自分でそのフォルダに合わせて使ってください）。
 
    ```
    cd d2l-pytorch-colab
@@ -46,14 +48,23 @@
 
    ```
    d2l-pytorch-colab > ls
-   README.md                                        chapter_deep-learning-computation                chapter_notation                                 d2l
-   chapter_appendix-mathematics-for-deep-learning   chapter_generative-adversarial-networks          chapter_optimization                             d2l.bib
-   chapter_appendix-tools-for-deep-learning         chapter_installation                             chapter_preface                                  img
-   chapter_attention-mechanisms                     chapter_introduction                             chapter_preliminaries                            index.ipynb
-   chapter_computational-performance                chapter_linear-networks                          chapter_recommender-systems                      setup.py
-   chapter_computer-vision                          chapter_multilayer-perceptrons                   chapter_recurrent-modern
-   chapter_convolutional-modern                     chapter_natural-language-processing-applications chapter_recurrent-neural-networks
-   chapter_convolutional-neural-networks            chapter_natural-language-processing-pretraining  chapter_references
+    README.md                                       chapter_natural-language-processing-applications
+    chapter_appendix-mathematics-for-deep-learning  chapter_natural-language-processing-pretraining
+    chapter_appendix-tools-for-deep-learning        chapter_notation
+    chapter_attention-mechanisms-and-transformers   chapter_optimization
+    chapter_builders-guide                          chapter_preface
+    chapter_computational-performance               chapter_preliminaries
+    chapter_computer-vision                         chapter_recommender-systems
+    chapter_convolutional-modern                    chapter_recurrent-modern
+    chapter_convolutional-neural-networks           chapter_recurrent-neural-networks
+    chapter_gaussian-processes                      chapter_references
+    chapter_generative-adversarial-networks         chapter_reinforcement-learning
+    chapter_hyperparameter-optimization             d2l
+    chapter_installation                            d2l.bib
+    chapter_introduction                            img
+    chapter_linear-classification                   index.ipynb
+    chapter_linear-regression                       setup.py
+    chapter_multilayer-perceptrons                  static
    ```
 
 - dockerコンテナを起動する
