@@ -26,20 +26,20 @@
     ```
     curl -OL https://github.com/d2l-ai/d2l-pytorch-colab/archive/refs/heads/master.zip
     ```
-    自分で適当な場所のd2l-pytorch-colabに解凍
+      master.zipファイルを自分のPCの適当な場所に解凍（ソースコードフォルダd2l-pytorch-colabが生成される）
     
     或いは 
     ```
     https://github.com/d2l-ai/d2l-pytorch-colab ページの右上「code」→download zip
     ```
-    自分で適当な場所のd2l-pytorch-colabに解凍
+    　master.zipファイルを自分のPCの適当な場所に解凍（ソースコードフォルダd2l-pytorch-colabが生成される）
 
     或いは
     ```
     git clone https://github.com/d2l-ai/d2l-pytorch-colab.git
     ```
     
-- 生成されたd2l-pytorch-colabフォルダに入る（d2l-pytorch-colab-masterなど違うフォルダ名なら、自分でそのフォルダに合わせて使ってください）。
+- 生成されたd2l-pytorch-colabフォルダに入る（d2l-pytorch-colab-masterなど生成されたフォルダ名が違うならそのフォルダに合わせて使ってもよい）。
 
    ```
    cd d2l-pytorch-colab
