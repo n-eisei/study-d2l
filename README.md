@@ -5,20 +5,15 @@
 ## 前提
   - インターネット接続
   - Dockerインストール済み
-
-## dockerイメージをダウンロード
-   ```
-    docker pull sunylab/d2l:1.0
-   ```
    
 ## D2Lソースコードをjupyterで実行する
-  [D2L Colab Classic](https://github.com/d2l-ai/d2l-pytorch-colab-classic.git)を例として、
+  [D2L Colab Classic](https://github.com/d2l-ai/d2l-pytorch-colab.git)を例として、
 
 - コードをダウンロードして解凍
   - linux/mac
     - ダウンロード：
      ```
-     wget https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
+     wget https://github.com/d2l-ai/d2l-pytorch-colab/archive/refs/heads/master.zip
      ```
      - 解凍：
      ```
@@ -28,7 +23,7 @@
   - windows
     - ダウンロード(cmd)：
     ```
-    curl -OL https://github.com/d2l-ai/d2l-pytorch-colab-classic/archive/refs/heads/master.zip
+    curl -OL https://github.com/d2l-ai/d2l-pytorch-colab/archive/refs/heads/master.zip
     ```
     - 解凍：
     ```
@@ -37,19 +32,19 @@
     
     或いは 
     ```
-    １．https://github.com/d2l-ai/d2l-pytorch-colab-classic ページの右上「code」→download zip
+    １．https://github.com/d2l-ai/d2l-pytorch-colab ページの右上「code」→download zip
     ２．自分のPCに解凍
     ```
    
-- 生成されたd2l-pytorch-colab-classicmasterフォルダに入る。
+- 生成されたd2l-pytorch-colabフォルダに入る。
 
    ```
-   cd d2l-pytorch-colab-classic-master
+   cd d2l-pytorch-colab
 
 - カレントフォルダの中身をリストアップすると、下記のようになる。
 
    ```
-   d2l-pytorch-colab-classic-master > ls
+   d2l-pytorch-colab > ls
    README.md                                        chapter_deep-learning-computation                chapter_notation                                 d2l
    chapter_appendix-mathematics-for-deep-learning   chapter_generative-adversarial-networks          chapter_optimization                             d2l.bib
    chapter_appendix-tools-for-deep-learning         chapter_installation                             chapter_preface                                  img
@@ -64,11 +59,11 @@
   
    (linux /mac )
    ```
-   docker run --rm -ti --name d2l -p 8188:8188 -v $(pwd):/root/study sunylab/d2l:1.0
+   docker run --rm -ti --name d2l -p 8188:8188 -v $(pwd):/root/study sunylab/d2l:1.1
    ```
    (power-shell)
    ```
-   docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.0
+   docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.1
    ```
    
    - ”--rm”オプションはコンテナ終了後に自動削除する。毎回クリーンな環境で実行したいならおすすめ。
@@ -88,7 +83,7 @@
 
 - d2l dockerコンテナを起動する
   
-  ※　カレントフォルダはd2l-pytorch-colab-classic-masterである。
+  ※　カレントフォルダはd2l-pytorch-colabである。
   
   - linux /mac
    ```
