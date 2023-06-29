@@ -17,13 +17,13 @@ docker run --rm -ti --name jupyter -p 8188:8188 -v `pwd`:/root/study -ti  sunyla
 
 ### 修正した箇所(赤い下線を示す３つの箇所）
 
-- import numpy
+#### import numpy
   ![image](https://github.com/n-eisei/study-d2l/blob/main/kaggle-screen1.jpg)
 
-- x.values   =>  numpy.array(x.values.tolist())
+#### x.values   =>  numpy.array(x.values.tolist())
  ![image](https://github.com/n-eisei/study-d2l/blob/main/kaggle-screen2.jpg)
 
-- data.val.values => numpy.array(data.val.values.tolist())
+#### data.val.values => numpy.array(data.val.values.tolist())
 ![image](https://github.com/n-eisei/study-d2l/blob/main/kaggle-screen3.jpg)
 
 
