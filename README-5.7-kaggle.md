@@ -1,7 +1,7 @@
 ### D2Lソースコードダウンロード　（d2l-pytorch フォルダが自動作成される）
 
 ```
-git clone https://github.com/d2l-ai/d2l-pytorch-colab.git
+git clone  https://github.com/dsgiitr/d2l-pytorch.git
 ```
 ### d2l-pytorch フォルダの下にdockerコンテナ実行
 
