@@ -91,7 +91,7 @@
    - ”-ti”オプションは、実行中のコンテナをcontrol-Cで終了できるようにする。これをつけなければ、コンテナの実行を終了するには[docker stop]コマンドが必要。
    - "--name d2l"は、起動したコンテナを識別するため。
    - "-p 8188:8188"はホストの8188ポートとコンテナの8188ポートにマッピングする。
-   - "$(pwd):/root/study" また、“${PWD}:/root/study"　はカレントフォルダをコンテナの中の[/root/study]フォルダにマッピングする。上記の例では、カレントフォルダはd2l-pytorch-colab-classic-masterである。
+   - "$(pwd):/root/study" また、“${PWD}:/root/study"　はカレントフォルダをコンテナの中の[/root/study]フォルダにマッピングする。上記の例では、カレントフォルダはd2l-pytorch-colabである。
 
 - ブラウザを開いて http://localhost:8188 ページを開く
   jupyterの画面に【/root/study】フォルダにあるjupyterファイルを開いて実行を試してください。
