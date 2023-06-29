@@ -8,12 +8,8 @@
    
 ## D2Lソースコードをjupyterで実行する
 
-  [D2L Colab](https://github.com/n-eisei/d2l-pytorch-colab.git)コードを使って作業を進める。
-  
+  [D2L Colab](https://github.com/n-eisei/d2l-pytorch-colab.git)コードを使って作業を進める。  
   ※D2Lのバージョン問題が起きたので、下記の現在最新[d2l-pytorch-colab　Version 1.0.0-beta0]に統一する。
-  ![image](https://github.com/n-eisei/study-d2l/assets/129954737/93e152ed-b61e-497c-b91e-74dd07cc43ae)
-
-  
 
 - コードをダウンロードして解凍
   - linux/mac
