@@ -7,7 +7,8 @@
   - Dockerインストール済み
    
 ## D2Lソースコードをjupyterで実行する
-  [D2L Colab Classic](https://github.com/d2l-ai/d2l-pytorch-colab.git)を例として、
+
+  [D2L Colab](https://github.com/d2l-ai/d2l-pytorch-colab.git)の最新コードを使って作業を進める、
 
 - コードをダウンロードして解凍
   - linux/mac
