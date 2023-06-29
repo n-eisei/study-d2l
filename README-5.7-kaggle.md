@@ -15,14 +15,16 @@ docker run --rm -ti --name jupyter -p 8188:8188 -v `pwd`:/root/study -ti  sunyla
 ### Jupyter実行する
 - [修正したJupyterファイル](https://github.com/n-eisei/d2l-pytorch-colab/blob/master/chapter_multilayer-perceptrons/kaggle-house-price-modification.ipynb)を開き、すべてのcellsを実行する
 
-### 修正した箇所
+### 修正した箇所(赤い下線を示す３つの箇所）
 
-- [import numpy](./kaggle-screen1.jpg)
+- import numpy
+  ![image](https://github.com/n-eisei/study-d2l/blob/main/kaggle-screen1.jpg)
 
-- [x.values   =>  numpy.array(x.values.tolist())](./kaggle-screen1.jpg)
+- x.values   =>  numpy.array(x.values.tolist())
+ ![image](https://github.com/n-eisei/study-d2l/blob/main/kaggle-screen2.jpg)
 
-- [data.val.values => numpy.array(data.val.values.tolist()) ](./kaggle-screen2.jpg)
-
+- data.val.values => numpy.array(data.val.values.tolist())
+![image](https://github.com/n-eisei/study-d2l/blob/main/kaggle-screen3.jpg)
 
 
 
