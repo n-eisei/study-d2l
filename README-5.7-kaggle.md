@@ -2,7 +2,7 @@
 ### 1. Jupyter実行する
 - 下記の修正したJupyterファイルを使ってください
 
-  https://github.com/n-eisei/d2l-pytorch-colab/blob/master/chapter_multilayer-perceptrons/kaggle-house-price-modification.ipynb
+  https://github.com/n-eisei/d2l-pytorch-colab/blob/master/chapter_multilayer-perceptrons/kaggle-house-price.ipynb
 
 ### 2. 修正した箇所(赤い下線を示す３つの箇所）
 
