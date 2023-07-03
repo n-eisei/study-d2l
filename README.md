@@ -12,11 +12,16 @@
   ※D2Lのバージョン問題が起きたので、d2l-pytorch-colab　Version 1.0.0-beta0に統一する。
 
 - コードをダウンロードして解凍
-  - linux/mac
+  - linux
     - ダウンロード：
      ```
      wget https://github.com/n-eisei/d2l-pytorch-colab/archive/refs/heads/master.zip
      ```
+     或いは
+     ```
+     curl -OL https://github.com/n-eisei/d2l-pytorch-colab/archive/refs/heads/master.zip
+     ```
+
      - 解凍：
      ```
      unzip master.zip -d d2l-pytorch-colab
@@ -48,39 +53,17 @@
 
    ```
    cd d2l-pytorch-colab
-
-- カレントフォルダの中身をリストアップすると、下記のようになる。
-
-   ```
-   d2l-pytorch-colab > ls
-    README.md                                       chapter_natural-language-processing-applications
-    chapter_appendix-mathematics-for-deep-learning  chapter_natural-language-processing-pretraining
-    chapter_appendix-tools-for-deep-learning        chapter_notation
-    chapter_attention-mechanisms-and-transformers   chapter_optimization
-    chapter_builders-guide                          chapter_preface
-    chapter_computational-performance               chapter_preliminaries
-    chapter_computer-vision                         chapter_recommender-systems
-    chapter_convolutional-modern                    chapter_recurrent-modern
-    chapter_convolutional-neural-networks           chapter_recurrent-neural-networks
-    chapter_gaussian-processes                      chapter_references
-    chapter_generative-adversarial-networks         chapter_reinforcement-learning
-    chapter_hyperparameter-optimization             d2l
-    chapter_installation                            d2l.bib
-    chapter_introduction                            img
-    chapter_linear-classification                   index.ipynb
-    chapter_linear-regression                       setup.py
-    chapter_multilayer-perceptrons                  static
    ```
 
 - dockerコンテナを起動する
   
    (linux /mac )
    ```
-   docker run --rm -ti --name d2l -p 8188:8188 -v $(pwd):/root/study sunylab/d2l:1.1
+   docker run --rm -ti --name d2l -p 8188:8188 -v $(pwd):/root/study sunylab/d2l:1.2
    ```
    (power-shell)
    ```
-   docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.1
+   docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.2
    ```
    
    - ”--rm”オプションはコンテナ終了後に自動削除する。毎回クリーンな環境で実行したいならおすすめ。
@@ -104,11 +87,11 @@
   
   - linux /mac
    ```
-   docker run --rm -ti --name d2l -p 8188:8188 -v `pwd`:/root/study sunylab/d2l:1.0
+   docker run --rm -ti --name d2l -p 8188:8188 -v `pwd`:/root/study sunylab/d2l:1.2
    ```
    - power-shell
    ```
-   docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.0
+   docker run --rm -ti --name d2l -p 8188:8188 -v ${PWD}:/root/study sunylab/d2l:1.2
    ```
    
  ## d2l dockerコンテナ既に起動中の場合
@@ -123,3 +106,6 @@
         docker stop d2l
         ```
  
+
+### 日本語メニューに切り替える
+![image](./images/jp-menu.jpg)
